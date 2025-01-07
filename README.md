@@ -1,6 +1,11 @@
+
+
 ##  Custom Property Wrappers
 
-A smart text field that self validate on editing
+**A smart text field that self validate on editing.**
+
+Property wrappers in Swift are a powerful feature that allows you to define reusable logic for managing how properties are stored, validated, or modified. 
+They encapsulate behaviors like validation, caching, or thread-safety, enabling code reuse and cleaner property management. In this demo example we build a smart field in SwiftUI that auto validate user input while editing.
 
 ```
 @propertyWrapper
@@ -11,41 +16,8 @@ struct SmartField: DynamicProperty {
 	
 	@State var error: String? = nil
 	
-	var wrappedValue: String {
-		get { value }
-		nonmutating set {
-			self.value = newValue
-			self.validate()
-		}
-	}
-	
-	var projectedValue: Binding<String> {
-		Binding {
-			wrappedValue
-		} set: {
-			wrappedValue = $0
-		}
-	}
-	
-	init (defaultValue: String = "", pattern: String) {
-		self.pattern = pattern
-		_value = State(wrappedValue: defaultValue)
-		self.validate()
-	}
-	
-	func validate() {
-		if let _ = self.value.range(
-			of: pattern,
-			options: .regularExpression
-		) {
-			withAnimation {
-				self.error = nil
-			}
-		} else {
-			withAnimation {
-				self.error = "Invalid value 😀"
-			}
-		}
-	}
+	...
 }
 ```
+
+See more [here](Slides/Topics/PropertyWrapperDemo.swift)
