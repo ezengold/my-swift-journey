@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B1E207122D2D1C2A0082A750 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B1E207112D2D1C2A0082A750 /* README.md */; };
+		B1E207142D2D1C420082A750 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = B1E207132D2D1C420082A750 /* LICENSE.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B182E3C72D29177400774966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		B182E3B02D29177200774966 /* Slides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B182E3C62D29177400774966 /* SlidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B182E3D02D29177400774966 /* SlidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E207112D2D1C2A0082A750 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B1E207132D2D1C420082A750 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -107,6 +114,8 @@
 				B182E3B22D29177200774966 /* Slides */,
 				B182E3C92D29177400774966 /* SlidesTests */,
 				B182E3D32D29177400774966 /* SlidesUITests */,
+				B1E207132D2D1C420082A750 /* LICENSE.md */,
+				B1E207112D2D1C2A0082A750 /* README.md */,
 				B182E3B12D29177200774966 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -241,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E207142D2D1C420082A750 /* LICENSE.md in Resources */,
+				B1E207122D2D1C2A0082A750 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
