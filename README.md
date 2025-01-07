@@ -1,6 +1,6 @@
+![Cover-Swift](https://github.com/user-attachments/assets/40523fdb-c08f-4e34-851a-6a47290b7dee)
 
-
-##  Custom Property Wrappers
+##  1. Custom Property Wrappers
 
 **A smart text field that self validate on editing.**
 
@@ -18,6 +18,9 @@ struct SmartField: DynamicProperty {
 	
 	...
 }
+
+// use case
+@SmartField(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$") var email
 ```
 
 See more [here](Slides/Topics/PropertyWrapperDemo.swift)
